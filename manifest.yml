@@ -1,0 +1,14 @@
+---
+declared-services:
+  asset_diamond_blockchain:
+    label: ibm-blockchain-5-prod
+    plan: ibm-blockchain-plan-5-prod
+applications:
+- disk_quota: 1024M
+  name: asset-diamond-demo-1
+  command: node app.js
+  path: .
+  instances: 1
+  memory: 512M
+  services:
+    - asset_diamond_blockchain
