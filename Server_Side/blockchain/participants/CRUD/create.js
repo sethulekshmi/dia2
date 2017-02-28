@@ -71,7 +71,7 @@ function loginUser(req, res, secret)
         }
         else
         {
-            if(counter >= 5){
+            if(counter >= 8){
                 counter = 0;
                 res.status(400);
                 var error = {};
