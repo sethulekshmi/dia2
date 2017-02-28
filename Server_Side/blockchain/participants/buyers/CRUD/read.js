@@ -11,7 +11,7 @@ let read = function(req, res)
 	{
         res.status(404);
         let error = {};
-        error.message = 'Unable to retrieve lease companies';
+        error.message = 'Unable to retrieve buyers';
         error.error = true;
         tracing.create('ERROR', 'GET blockchain/participants/buyers', error);
         res.send(error);
