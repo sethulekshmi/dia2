@@ -121,28 +121,28 @@ function writeUserToFile(req, res, secret)
         switch(req.body.affiliation)
         {
        case "Miner":
-				userType="miner";
+				userType="miners";
 				break;
 			case "Distributor":
-				userType="distributor";
+				userType="distributors";
 				break;
 			case "Dealership":
-				userType="dealership";
+				userType="dealerships";
 				break;
 			case "Buyer":
-				userType="buyer";
+				userType="buyers";
 				break;
 			case "Trader":
-				userType="trader";
+				userType="traders";
 				break;
 			case "Cutter":
-				userType="cutter";
+				userType="cutters";
 				break;
 			case "Jewellery_maker":
-				userType="jewellery_maker";
+				userType="jewellery_makers";
 				break;
 			case "Customer":
-				userType="customer";
+				userType="customers";
 				break;
         }
         userNumber = newData[userType].length;
