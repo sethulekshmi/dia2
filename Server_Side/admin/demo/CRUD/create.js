@@ -11,8 +11,8 @@ let fs = require('fs');
 
 const TYPES = [
     'miner_to_distributor',
-    'distributor_to_dealer',
-    'dealer_to_buyer',
+    'distributor_to_dealership',
+    'dealership_to_buyer',
     'buyer_to_trader',
     'trader_to_cutter',
 'cutter_to_jewellery_maker',
